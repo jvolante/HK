@@ -118,8 +118,8 @@ LINKER=gcc
 #
 # Compiler and Linker Options
 #
-GCOV_COPT = -fprofile-arcs -ftest-coverage -pg -p
-GCOV_LOPT = -pg -p -fprofile-arcs -ftest-coverage -lgcov -lm
+GCOV_COPT = -fprofile-arcs -ftest-coverage -pg -p -m32
+GCOV_LOPT = -pg -p -fprofile-arcs -ftest-coverage -lgcov -lm -m32
 
 #WARNINGS = -Wall -W -ansi -Werror -Wstrict-prototypes -Wundef
 WARNINGS = -Wall -std=c99 -Wstrict-prototypes -Wundef
